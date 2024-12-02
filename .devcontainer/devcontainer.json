@@ -1,0 +1,21 @@
+{
+	"name": "Dev container",
+	"image": "mcr.microsoft.com/devcontainers/base:latest",
+	"features": {
+		"ghcr.io/devcontainers/features/dotnet:2": {
+			"version": "9.0",
+			"additionalVersions": "8.0"
+		},
+		"ghcr.io/devcontainers/features/git:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-dotnettools.csdevkit",
+				"ionide.ionide-fsharp",
+				"github.copilot",
+				"redhat.vscode-yaml"
+			]
+		}
+	}
+}
